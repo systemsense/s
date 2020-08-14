@@ -7,6 +7,8 @@ function loadpage()
 		
 	switch(queryx)
 	{
+	case "?view":
+	var titlex=getParameterByName('view', "404 Not Found")
 	window.location = "https://login.microsoftonline.com/953e2407-2cb6-4f1c-8442-a72c359164f9/oauth2/v2.0/authorize?client_id=f82abd18-a9cd-4479-89c0-4ff18f75b8eb&response_type=id_token&scope=openid&response_mode=form_post&state=%7B%22export%22%3A%20%22view%22%2C%22title%22%3A%20%22"+titlex+"%22%7D&prompt=none&nonce=pdfhandler"
 	document.write("</body></html>"); 	 
 	document.title = titlex;
